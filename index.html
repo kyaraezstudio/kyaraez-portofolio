@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KYARAEZ — Rezkya Putri Novianti | Creative Portfolio</title>
+  <meta name="description" content="Personal creative portfolio of Rezkya Putri Novianti — exploring web development, design, content, research, writing, and creative technology.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="KYARAEZ — Rezkya Putri Novianti | Creative Portfolio">
+  <meta property="og:description" content="Personal creative portfolio of Rezkya Putri Novianti — exploring web development, design, content, research, writing, and creative technology.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-label"></div>
+  </div>
+  <div class="cursor-trail" id="cursorTrail" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home" class="nav-brand" data-hover="explore" id="navBrand">
+        <span class="brand-main">KYARAEZ</span>
+        <span class="brand-alt">Rezkya Putri Novianti</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link" data-i18n="nav.home">Beranda</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">Tentang</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Keahlian</a></li>
+        <li><a href="#work" class="nav-link" data-i18n="nav.work">Karya</a></li>
+        <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Pengalaman</a></li>
+        <li><a href="#services" class="nav-link" data-i18n="nav.services">Layanan</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn active" data-lang="id" aria-pressed="true">ID</button>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon theme-icon-light" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </span>
+          <span class="theme-icon theme-icon-dark" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </span>
+        </button>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 01 — HERO -->
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-meta">
+          <span class="hero-meta-item" data-i18n="hero.meta">Personal Creative Portfolio</span>
+          <span class="hero-meta-line" aria-hidden="true"></span>
+          <span class="hero-meta-item">2026</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-brand" data-hover="explore" id="heroBrand">
+            <span class="brand-main">KYARAEZ</span>
+            <span class="brand-alt">Rezkya Putri Novianti</span>
+          </span>
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          A multidisciplinary creative exploring design, technology, research, content, and ideas.
+        </p>
+
+        <p class="hero-support" data-i18n="hero.support">
+          Building, designing, researching, and creating across different mediums.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary" data-i18n="hero.ctaPrimary">Jelajahi Karya</a>
+          <a href="#about" class="btn btn-secondary" data-i18n="hero.ctaSecondary">Di Balik KYARAEZ</a>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-organic"></div>
+          <div class="hero-line"></div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span data-i18n="hero.scroll">Gulir</span>
+        <div class="scroll-indicator" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 04 — ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title" data-i18n="about.title">Di Balik KYARAEZ</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image-wrap">
+            <!-- EDITABLE: PROFILE IMAGE — replace assets/images/profile.jpg -->
+            <div class="about-image placeholder-image" data-placeholder="Profile">
+              <img src="assets/images/profile.jpg" alt="Rezkya Putri Novianti" loading="lazy" onerror="this.style.display='none'">
+              <span class="placeholder-label">assets/images/profile.jpg</span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <p class="about-lead" data-i18n="about.lead">
+              Hi, I'm Rezkya Putri Novianti, the person behind KYARAEZ.
+            </p>
+            <div class="about-body">
+              <p data-i18n="about.p1">
+                KYARAEZ is my personal creative identity — a space where I bring together the things I create, explore, and learn along the way.
+              </p>
+              <p data-i18n="about.p2">
+                From building websites and designing digital experiences to graphic design, content, writing, research, presentations, and experimenting with AI-assisted creative work, KYARAEZ represents my curiosity across different creative fields.
+              </p>
+              <p data-i18n="about.p3">
+                This portfolio is a collection of my projects, experiences, ideas, and progress — not just as a creator, but as someone who is continuously learning, experimenting, and growing.
+              </p>
+              <p class="about-welcome" data-i18n="about.welcome">
+                Welcome to KYARAEZ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 — SKILLS -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title" data-i18n="skills.title">Yang Saya Lakukan</h2>
+          <p class="section-support" data-i18n="skills.support">
+            A multidisciplinary creative toolkit shaped by curiosity, experimentation, and constant learning.
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skills rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 — SELECTED WORK -->
+    <section class="work" id="work">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title" data-i18n="work.title">Karya Terpilih</h2>
+          <p class="section-support" data-i18n="work.support">
+            A selection of things I've built, designed, explored, and created.
+          </p>
+        </div>
+
+        <div class="work-filters" role="group" aria-label="Filter projects">
+          <button type="button" class="filter-btn active" data-filter="all" data-i18n="work.filterAll">Semua</button>
+          <button type="button" class="filter-btn" data-filter="web" data-i18n="work.filterWeb">Web</button>
+          <button type="button" class="filter-btn" data-filter="design" data-i18n="work.filterDesign">Desain</button>
+          <button type="button" class="filter-btn" data-filter="content" data-i18n="work.filterContent">Konten</button>
+          <button type="button" class="filter-btn" data-filter="research" data-i18n="work.filterResearch">Riset</button>
+          <button type="button" class="filter-btn" data-filter="creative" data-i18n="work.filterCreative">Kreatif</button>
+        </div>
+
+        <div class="work-grid" id="workGrid">
+          <!-- Projects rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-panel">
+        <button type="button" class="modal-close" data-close-modal aria-label="Close project details">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <div class="modal-content" id="modalContent">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 08 — EXPERIENCE -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title" data-i18n="experience.title">Pengalaman & Pencapaian</h2>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <!-- Experience entries rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 09 — CREATIVE PLAYGROUND -->
+    <section class="playground" id="playground">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2 class="section-title" data-i18n="playground.title">Creative Playground</h2>
+          <p class="section-support" data-i18n="playground.support">
+            A space for experiments, small ideas, visual explorations, writing, prototypes, research snippets, and things that don't necessarily belong in the main portfolio.
+          </p>
+        </div>
+
+        <div class="playground-track" id="playgroundTrack">
+          <!-- Playground items rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 10 — SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <h2 class="section-title" data-i18n="services.title">Yang Bisa Saya Bantu</h2>
+          <p class="section-support" data-i18n="services.support">
+            Selected creative services and areas I work across.
+          </p>
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+          <!-- Services rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 — CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-inner">
+          <h2 class="contact-heading" data-i18n="contact.heading">Punya ide di pikiran?</h2>
+          <p class="contact-support" data-i18n="contact.support">
+            Whether it's a website, visual project, creative collaboration, or simply an idea worth exploring — let's talk.
+          </p>
+          <a href="mailto:zkyaa4@gmail.com" class="btn btn-primary btn-large" data-i18n="contact.cta">Mari Bekerja Sama</a>
+
+          <div class="contact-details">
+            <!-- EDITABLE: CONTACT -->
+            <a href="mailto:zkyaa4@gmail.com" class="contact-link">
+              <span class="contact-label" data-i18n="contact.email">Email</span>
+              <span class="contact-value">zkyaa4@gmail.com</span>
+            </a>
+            <a href="https://www.instagram.com/zky.a4/" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="contact-label">Instagram</span>
+              <span class="contact-value">@zky.a4</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 12 — FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-name">KYARAEZ</span>
+          <span class="footer-person">Rezkya Putri Novianti</span>
+          <span class="footer-tag" data-i18n="footer.tag">Personal Creative Portfolio</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/zky.a4/" target="_blank" rel="noopener noreferrer">Instagram — @zky.a4</a>
+          <a href="mailto:zkyaa4@gmail.com">Email — zkyaa4@gmail.com</a>
+        </div>
+        <p class="footer-copy">© 2026 KYARAEZ. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
